@@ -1,0 +1,80 @@
+@import 'global.css';
+@import 'layout.css';
+body {
+  background-color: var(--neutral-color);
+}
+
+#content {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+#content main {
+  padding: 1rem;
+}
+
+#main-sidebar {
+  padding: 3rem 1rem 1rem 1rem;
+}
+
+#main-sidebar ul {
+  padding: 1rem 0;
+  border-right: 1px solid var(--primary-light-color);
+  position: sticky;
+  top: 120px;
+}
+
+#main-sidebar ul li {
+  padding: 1rem 0;
+}
+
+section {
+  margin-top: 4rem;
+}
+
+/* TYPOGRAPHY */
+.guide-typography {
+  align-items: center;
+}
+
+.guide-typography > div {
+  padding: 1rem;
+}
+
+.guide-typography__example {
+  min-width: 400px;
+}
+
+.guide-typography__properties {
+  min-width: 140px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* COLORS */
+.guide-color ul {
+  padding: 10rem 1rem 1rem 1rem;
+  border-radius: 0.5rem;
+  height: 19rem;
+}
+
+.guide-color li {
+  padding-top: 0.5rem;
+}
+
+/* CONTENT */
+.guide-content__container {
+  padding: 1rem;
+  border-radius: 0.5rem;
+  background-color: var(--secondary-color);
+  height: 27rem;
+}
+
+.col-style {
+  border: 1px solid var(--primary-light-color);
+  box-sizing: border-box;
+  padding: 10px;
+  text-align: center;
+}
+
+/*# sourceMappingURL=guide.css.map */

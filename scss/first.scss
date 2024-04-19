@@ -1,0 +1,82 @@
+@use './utilities/functions' as *;
+@import "variables.css";
+
+#main-menu {
+    img {
+        width: 75px;
+        height: 75px;
+    }
+    
+    & > div {
+        width: 50%;
+        box-sizing: border-box;
+        padding: 1rem;
+
+        &:first-child {
+            float: left;
+        }
+
+        &:last-child {
+            float: right;
+            text-align: right;
+        }
+    }
+
+    &::after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+}
+
+#go-top {
+    padding: 1rem 1.1rem;
+    border-radius: 3rem;
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    background-color: var(--neutral-color);
+
+    &:hover {
+        transition: all 0.2s linear 0s;
+    }
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+    width: 100%;
+    padding: 2rem 1rem;
+    box-sizing: border-box;
+}
+
+@media screen and (min-width: get-breakpoint("sm")) {
+    .wrapper {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (min-width: get-breakpoint("md")) {
+    .wrapper {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (min-width: get-breakpoint("lg")) {
+    .wrapper {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (min-width: get-breakpoint("xl")) {
+    .wrapper {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (min-width: get-breakpoint("xxl")) {
+    .wrapper {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}

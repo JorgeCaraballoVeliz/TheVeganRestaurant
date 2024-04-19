@@ -1,0 +1,30 @@
+@use "./utilities/variables" as *;
+@use './utilities/functions' as *;
+@use "sass:map";
+@use 'sass:color';
+
+@each $font, $font-family in $font-names {
+    @font-face {
+        font-family: $font-family;
+        src: map.get($font-src, $font-family);
+    }
+}
+
+html {
+    --min-width: 320px;
+
+    /* COLORS */
+    @each $color, $value in $colors {
+        --#{$color}-color: #{$value};
+        --#{$color}-complement-color: #{complement($value)};
+        --#{$color}-dark-color: #{darken($value, 30%)};
+        --#{$color}-darkest-color: #{darken($value, 50%)};
+        --#{$color}-light-color: #{lighten($value, 30%)};
+        --#{$color}-lightest-color: #{lighten($value, 50%)};
+    }
+
+    /* BREAKPOINTS */
+    @each $breakpoint, $value in $breakpoints {
+        --breakpoint-#{$breakpoint}: #{$value};
+    }
+}

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web components</title>
+    <link rel="stylesheet" href="../css/global.css">
+</head>
+<body>
+    <style>
+        button {
+            padding: 1rem;
+            background-color: var(--secondary-color);
+            color: var(--secondary-lightest-color);
+            border: none;
+        }
+        p {
+            color: var(--neutral-color);
+        }
+    </style>
+    <h1>Web Components</h1>
+    <button>Mi botón</button>
+
+    <template id="special-button">
+        <style>
+            button {
+                font-size: 1.6rem;
+                padding: 1rem 2rem 1rem 2rem;
+                border: none;
+                background-color: var(--primary-color);
+                color: var(--neutral-color);
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+                flex-flow: row nowrap;
+            }
+
+            button:before {
+                content: "";
+                display: block;
+                opacity: 0;
+                width: 0;
+                height: 1px;
+                margin-right: 1rem;
+                background-color: var(--neutral-color);
+                transition: all 0.2s linear 0s;
+            }
+
+            button:after {
+                content: "";
+                display: block;
+                width: 3rem;
+                height: 1px;
+                margin-left: 1rem;
+                background-color: var(--neutral-color);
+                transition: all 0.2s linear 0s;
+            }
+
+            button:hover:after {
+                opacity: 0;
+                width: 0;
+                transition: all 0.2s linear 0s;
+            }
+
+            button:hover:before {
+                opacity: 1;
+                width: 3rem;
+                transition: all 0.2s linear 0s;
+            }
+        </style>
+        <button>
+            <slot name="button-text">Mi botón template</slot>
+        </button>
+    </template>
+
+    <div id="shadow-host"></div>
+
+    <button>Mi botón 2</button>
+    
+    <my-copyright></my-copyright>
+
+    <p>Esto es un elemento protegido por copyright <my-copyright></my-copyright></p>
+
+    <p>Botón de web component:</p>
+    <special-button></special-button>
+
+    <p>Botón de web component con slot:</p>
+    <special-button>
+        <span slot="button-text">Mi botón WC slot</span>
+    </special-button>
+
+    <p>Botón de web component con atributo:</p>
+    <special-button my-attribute="attrExample">
+        <span slot="button-text">Mi botón WC attribute</span>
+    </special-button>
+
+    <p>Pruebas:</p> <br>
+
+    <card-component></card-component>
+    <br>
+    <special-button></special-button>
+
+    <script>
+        const specialBtnTemplate = document.getElementById('special-button');
+        const shadowHost = document.getElementById('shadow-host');
+        shadowHost.attachShadow({ mode: 'open' });
+        shadowHost.shadowRoot.appendChild(specialBtnTemplate.content.cloneNode(true));
+
+        window.customElements.define('my-copyright', class MyButton extends HTMLElement {
+            constructor() {
+                super();
+                const myElement = document.createElement('span');
+                myElement.textContent = ' © ';
+                myElement.style.color = 'red';
+                myElement.style.fontSize = '2rem';
+                this.appendChild(myElement);
+            }
+        });
+    </script>
+    <script src="./special-button/special-button.js"></script>
+    <script src="./card-component/card-component.js"></script>
+</body>
+</html>

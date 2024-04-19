@@ -1,0 +1,83 @@
+$font-properties: (
+    "size-global": 16px,
+    "default-font": "\"VR_Standard\", serif",
+);
+
+$font-names: (
+    "standard": "VR_Standard",
+    "standard-italic": "VR_Standard_Italic",
+    "handmade": "VR_Handmade"
+);
+
+$font-src: (
+    "VR_Standard": url(../fonts/estandar.woff2) format("woff2"),
+    "VR_Standard_Italic": url(../fonts/estandar_italic.woff2) format("woff2"),
+    "VR_Handmade": url(../fonts/handmade.woff2)
+);
+
+$elements-sizes: (
+    "h1": 3.5rem,
+    "h2": 2.5rem,
+    "h3": 2rem,
+    "h4": 1.5rem,
+    "h5": 1.25rem,
+    "h6": 1rem,
+    "p": 1rem,
+    "small": 0.8rem
+);
+
+$elements-paddings: (
+    "h1": 1.5rem 0,
+    "h2": 1rem 0,
+    "h3": 1rem 0,
+    "h4": 1rem 0,
+    "h5": 1rem 0,
+    "h6": 1rem 0,
+    "p": 1rem 0,
+    "li": 0.2rem 0
+);
+
+$elements-weights: (
+    "h1": 900,
+    "h2": 700,
+    "h3": 700,
+    "h4": 700,
+    "h5": 700,
+    "h6": 700,
+    "bold": 700,
+);
+
+$colors: (
+    "primary": #c9ab81,
+    "secondary": #59335c,
+    "neutral": #333333,
+    "warning": #cd0707,
+    "info": #f0ad4e,
+    "text": #ffffff,
+);
+
+$elements-colors: (
+    "h1": var(--primary-color),
+    "h2": var(--primary-color),
+    "h3": var(--primary-color),
+    "h4": var(--primary-color),
+    "h5": var(--primary-color),
+    "h6": var(--primary-color),
+    "text": var(--text-color),
+    "mark": var(--primary-darkest-color),
+    "mark-bg": var(--primary-color),
+    "hr": var(--primary-light-color),
+    "a": var(--primary-color),
+    "a:hover": var(--primary-light-color),
+    "menu": var(--primary-light-color),
+    "menu-bg": var(--neutral-color),
+);
+
+$breakpoints: (
+    "xs": 0,
+    "sm": 576px,
+    "md": 768px,
+    "lg": 992px,
+    "xl": 1200px,
+    "xxl": 1400px
+);

@@ -1,0 +1,33 @@
+@use './utilities/mixins' as *;
+@use './utilities/variables' as *;
+@use 'sass:math';
+/* FLEXBOX */
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.col {
+  flex-basis: 0;
+  flex-grow: 1;
+}
+
+@for $i from 1 through 12 {
+  .col-#{$i} {
+    flex-basis: math.div(100%, $i);
+  }
+}
+
+@each $breakpoint, $value in $breakpoints {
+    @if $breakpoint != "xs" {
+        @include breakpoint($breakpoint) {
+            @for $i from 1 through 12 {
+              .col-#{$breakpoint}-#{$i} {
+                flex-basis: math.div(100%, $i);
+              }
+            }
+        }
+    }
+}

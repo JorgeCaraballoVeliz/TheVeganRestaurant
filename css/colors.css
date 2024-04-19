@@ -1,0 +1,49 @@
+.bg-primary-color {
+  background-color: #c9ab81;
+}
+
+.font-primary-color {
+  color: #c9ab81;
+}
+
+.bg-secondary-color {
+  background-color: #59335c;
+}
+
+.font-secondary-color {
+  color: #59335c;
+}
+
+.bg-neutral-color {
+  background-color: #333333;
+}
+
+.font-neutral-color {
+  color: #333333;
+}
+
+.bg-warning-color {
+  background-color: #cd0707;
+}
+
+.font-warning-color {
+  color: #cd0707;
+}
+
+.bg-info-color {
+  background-color: #f0ad4e;
+}
+
+.font-info-color {
+  color: #f0ad4e;
+}
+
+.bg-text-color {
+  background-color: #ffffff;
+}
+
+.font-text-color {
+  color: #ffffff;
+}
+
+/*# sourceMappingURL=colors.css.map */

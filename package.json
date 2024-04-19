@@ -1,0 +1,16 @@
+{
+  "name": "ejercicio",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "sass scss:css",
+    "build-dev": "sass --watch scss:css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.71.0"
+  },
+  "description": ""
+}

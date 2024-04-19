@@ -1,0 +1,71 @@
+@import "variables.css";
+#main-menu img {
+  width: 75px;
+  height: 75px;
+}
+#main-menu > div {
+  width: 50%;
+  box-sizing: border-box;
+  padding: 1rem;
+}
+#main-menu > div:first-child {
+  float: left;
+}
+#main-menu > div:last-child {
+  float: right;
+  text-align: right;
+}
+#main-menu::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+#go-top {
+  padding: 1rem 1.1rem;
+  border-radius: 3rem;
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  background-color: var(--neutral-color);
+}
+#go-top:hover {
+  transition: all 0.2s linear 0s;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1rem;
+  width: 100%;
+  padding: 2rem 1rem;
+  box-sizing: border-box;
+}
+
+@media screen and (min-width: 576px) {
+  .wrapper {
+    grid-template-columns: 1fr;
+  }
+}
+@media screen and (min-width: 768px) {
+  .wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (min-width: 992px) {
+  .wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .wrapper {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (min-width: 1400px) {
+  .wrapper {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/*# sourceMappingURL=first.css.map */

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web components</title>
+    <link rel="stylesheet" href="../css/global.css">
+</head>
+<body>
+    
+    <h1>Web Components</h1>
+    <button>Mi botón</button>
+
+    <div id="shadow-host"></div>
+
+    <p>Pruebas:</p> <br>
+
+    <card-component my-attribute="--primary-color" font-attribute="--neutral-dark-color" pad-attribute="*">
+        <ul slot="inner-text" >
+            <li><hr class="font-contrast-color"></li>
+            <li><b>Color --primary-color</b></li>
+            <li>--primary-color: #c9ab81</li>
+            <li>--primary-complement-color: #819fc9</li>
+            <li>--primary-dark-color: #7c5e35</li>
+            <li>--primary-darkest-color: #352817</li>
+            <li>--primary-light-color: #f7f2ec</li>
+            <li>--primary-lightest-color: white</li>
+        </ul>
+    </card-component>
+    <card-component>
+        <div slot="inner-text" >
+            <div>
+                <p><b>Link</b></p>
+                <hr>
+                <p><b>Ejemplo:</b></p>
+                <p>Este es un párrafo de ejemplo que sirve para mostrar <a href="#">algún estilo</a> de etiqueta HTML.</p>
+            </div>
+            <div>
+                <p><b>Código:</b></p>
+                <code>
+                    &lt;p>Este es un párrafo de ejemplo que sirve para mostrar &lt;a href="#">algún estilo&lt;/a> de etiqueta HTML.&lt;/p>
+                </code>
+            </div>
+        </div>
+    </card-component>
+
+    <card-component>
+        <div slot="inner-text" >
+            
+        </div>
+    </card-component>
+
+    <card-component my-attribute="--primary-color" font-attribute="--neutral-dark-color" pad-attribute="*">
+        <ul slot="inner-text" >
+            <li><hr class="font-contrast-color"></li>
+
+        </ul>
+    </card-component>
+    
+    <script src="./card-component/card-component.js"></script>
+</body>
+</html>

@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <base href="http://127.0.0.1:5500">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guía de estilos de The Vegan Restaurant</title>
+    <meta name="description" content="Guía de estilos del sitio web de The Vegan Restaurant">
+    <link rel="stylesheet" href="css/first.css">
+    <link rel="preload" href="css/guide.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="stylesheet" href="css/guide.css">
+</head>
+<body>
+    <nav id="main-menu">
+        <div>
+            <img src="img/logo-small.png" alt="logo de the vegan restaurant">
+        </div>
+        <div>
+            <h2>The Vegan Restaurant</h2>
+        </div>
+    </nav>
+    <div id="content">
+        <main>
+            <article>
+                <header>
+                    <h1>Guía de estilos de <br> The Vegan Restaurant</h1>
+                    <p>Esta es la guía de estilos de <abbr title="The Vegan Restaurant">TVR</abbr>, un restaurante vegano ficticio. Aquí podemos encontrar la definición de todos los estilos del sitio, de este modo nos sirve de referencia para la creación de los diferentes elementos del sitio web.</p>
+                </header>
+
+                <!-- COLORS -->
+                <section id="colors">
+                    <header>
+                        <h2>Colores</h2>
+                    </header>
+                    <div class="wrapper">
+                        <card-component my-attribute="--primary-color" font-attribute="--neutral-dark-color" pad-attribute="*">
+                            <ul slot="inner-text" >
+                                <li><hr class="font-contrast-color"></li>
+                                <li><b>Color --primary-color</b></li>
+                                <li>--primary-color: #c9ab81</li>
+                                <li>--primary-complement-color: #819fc9</li>
+                                <li>--primary-dark-color: #7c5e35</li>
+                                <li>--primary-darkest-color: #352817</li>
+                                <li>--primary-light-color: #f7f2ec</li>
+                                <li>--primary-lightest-color: white</li>
+                            </ul>
+                        </card-component>
+                        <card-component my-attribute="--secondary-color" pad-attribute="*">
+                            <ul slot="inner-text" >
+                                <li><hr></li>
+                                <li><b>Color --secondary-color</b></li>
+                                <li>--secondary-color: #59335c</li>
+                                <li>--secondary-complement-color: #365c33</li>
+                                <li>--secondary-dark-color: black</li>
+                                <li>--secondary-darkest-color: black</li>
+                                <li>--secondary-light-color: #ae75b3</li>
+                                <li>--secondary-lightest-color: #d5b7d7</li>
+                            </ul>
+                        </card-component>
+                        <card-component my-attribute="--neutral-color" pad-attribute="*">
+                            <ul slot="inner-text" >
+                                <li><hr></li>
+                                <li><b>Color --neutral-color</b></li>
+                                <li>--neutral-color: #333333</li>
+                                <li>--neutral-complement-color: #333333</li>
+                                <li>--neutral-dark-color: black</li>
+                                <li>--neutral-darkest-color: black</li>
+                                <li>--neutral-light-color: gray</li>
+                                <li>--neutral-lightest-color: #b3b3b3</li>
+                            </ul>
+                        </card-component>
+                        <card-component my-attribute="--warning-color" pad-attribute="*">
+                            <ul slot="inner-text" >
+                                <li><hr></li>
+                                <li><b>Color --warning-color</b></li>
+                                <li>--warning-color: #cd0707</li>
+                                <li>--warning-complement-color: #07cdcd</li>
+                                <li>--warning-dark-color: #390202</li>
+                                <li>--warning-darkest-color: black</li>
+                                <li>--warning-light-color: #fa7373</li>
+                                <li>--warning-lightest-color: #fed5d5</li>
+                            </ul>
+                        </card-component>
+                        <card-component my-attribute="--info-color" font-attribute="--neutral-dark-color" pad-attribute="*">
+                            <ul slot="inner-text" >
+                                <li><hr class="font-contrast-color"></li>
+                                <li><b>Color --info-color</b></li>
+                                <li>--info-color: #f0ad4e</li>
+                                <li>--info-complement-color: #4e91f0</li>
+                                <li>--info-dark-color: #985f0d</li>
+                                <li>--info-darkest-color: #3a2405</li>
+                                <li>--info-light-color: #fceedb</li>
+                                <li>--info-lightest-color: white</li>
+                            </ul>
+                        </card-component>
+                        <card-component my-attribute="--text-color" font-attribute="--neutral-dark-color" pad-attribute="*">
+                            <ul slot="inner-text" >
+                                <li><hr class="font-contrast-color"></li>
+                                <li><b>Color --text-color</b></li>
+                                <li>--info-color: white</li>
+                                <li>--info-complement-color: white</li>
+                                <li>--info-dark-color: #b3b3b3</li>
+                                <li>--info-darkest-color: gray</li>
+                                <li>--info-light-color: white</li>
+                                <li>--info-lightest-color: white</li>
+                            </ul>
+                        </card-component>
+                    </div>
+                </section>
+
+                <!-- TYPOGRAPHY -->
+                <section id="typography">
+                    <header>
+                        <h2>Tipografía</h2>
+                    </header>
+                    <div class="guide-typography row">
+                        <div class="guide-typography__example col">
+                            <p class="header1">Header Level 1</p>
+                        </div>
+                        <div class="guide-typography__properties col">
+                            <ul>
+                                <li>font-size: 3.5rem</li>
+                                <li>font-weight: 900</li>
+                                <li>padding: 1.5rem 0</li>
+                                <li>color: --gold-color</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="guide-typography row">
+                        <div class="guide-typography__example col">
+                            <p class="header2">Header Level 2</p>
+                        </div>
+                        <div class="guide-typography__properties col">
+                            <ul>
+                                <li>font-size: 2.5rem</li>
+                                <li>font-weight: 700</li>
+                                <li>padding: 1rem 0</li>
+                                <li>color: --gold-color</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="guide-typography row">
+                        <div class="guide-typography__example col">
+                            <p class="header3">Header Level 3</p>
+                        </div>
+                        <div class="guide-typography__properties col">
+                            <ul>
+                                <li>font-size: 2rem</li>
+                                <li>font-weight: 400</li>
+                                <li>padding: 1rem 0</li>
+                                <li>color: --gold-color</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="guide-typography row">
+                        <div class="guide-typography__example col">
+                            <p class="header4">Header Level 4</p>
+                        </div>
+                        <div class="guide-typography__properties col">
+                            <ul>
+                                <li>font-size: 1.5rem</li>
+                                <li>font-weight: 400</li>
+                                <li>padding: 1rem 0</li>
+                                <li>color: --gold-color</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="guide-typography row">
+                        <div class="guide-typography__example col">
+                            <p class="header5">Header Level 5</p>
+                        </div>
+                        <div class="guide-typography__properties col">
+                            <ul>
+                                <li>font-size: 1.25rem</li>
+                                <li>font-weight: 400</li>
+                                <li>padding: 1rem 0</li>
+                                <li>color: --gold-color</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="guide-typography row">
+                        <div class="guide-typography__example col">
+                            <p class="header6">Header Level 6</p>
+                        </div>
+                        <div class="guide-typography__properties col">
+                            <ul>
+                                <li>font-size: 1rem</li>
+                                <li>font-weight: 400</li>
+                                <li>padding: 1rem 0</li>
+                                <li>color: --gold-color</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="guide-typography row">
+                        <div class="guide-typography__example col">
+                            <p>Este es un párrafo de ejemplo</p>
+                        </div>
+                        <div class="guide-typography__properties col">
+                            <ul>
+                                <li>font-size: 1rem</li>
+                                <li>font-weight: 400</li>
+                                <li>padding: 1rem 0</li>
+                                <li>color: --light-color</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- CONTENT ELEMENTS -->
+                <section id="content-elements">
+                    <header>
+                        <h2>Contenido</h2>
+                    </header>
+                    <div class="wrapper">
+                        <div class="guide-content">
+                            <card-component>
+                                <div slot="inner-text" >
+                                    <div>
+                                        <p><b>Link</b></p>
+                                        <hr>
+                                        <p><b>Ejemplo:</b></p>
+                                        <p>Este es un párrafo de ejemplo que sirve para mostrar <a href="#">algún estilo</a> de etiqueta HTML.</p>
+                                    </div>
+                                    <div>
+                                        <p><b>Código:</b></p>
+                                        <code>
+                                            &lt;p>Este es un párrafo de ejemplo que sirve para mostrar &lt;a href="#">algún estilo&lt;/a> de etiqueta HTML.&lt;/p>
+                                        </code>
+                                    </div>
+                                </div>
+                            </card-component>
+                        </div>
+                        <div class="guide-content">
+                            <card-component>
+                                <div slot="inner-text" >
+                                    <div class="guide-content__example">
+                                        <p><b>Cursiva</b></p>
+                                        <hr>
+                                        <p><b>Ejemplo:</b></p>
+                                        <p>Este es un párrafo de ejemplo que sirve para mostrar <i>algún estilo</i> de etiqueta HTML.</p>
+                                    </div>
+                                    <div class="guide-content__properties">
+                                        <p><b>Código:</b></p>
+                                        <code>
+                                            &lt;p>Este es un párrafo de ejemplo que sirve para mostrar &lt;i>algún estilo&lt;/i> de etiqueta HTML.&lt;/p>
+                                        </code>
+                                    </div>
+                                </div>
+                            </card-component>
+                        </div>
+                        <div class="guide-content">
+                            <card-component>
+                                <div slot="inner-text" >
+                                    <div class="guide-content__example">
+                                        <p><b>Negrita</b></p>
+                                        <hr>
+                                        <p><b>Ejemplo:</b></p>
+                                        <p>Este es un párrafo de ejemplo que sirve para mostrar <b>algún estilo</b> de etiqueta HTML.</p>
+                                    </div>
+                                    <div class="guide-content__properties">
+                                        <p><b>Código:</b></p>
+                                        <code>
+                                            &lt;p>Este es un párrafo de ejemplo que sirve para mostrar &lt;b>algún estilo&lt;/b> de etiqueta HTML.&lt;/p>
+                                        </code>
+                                    </div>
+                                </div>
+                            </card-component>
+                        </div>
+                        <div class="guide-content">
+                            <card-component>
+                                <div slot="inner-text" >
+                                    <div class="guide-content__example">
+                                        <p><b>Marca</b></p>
+                                        <hr>
+                                        <p><b>Ejemplo:</b></p>
+                                        <p>Este es un párrafo de ejemplo que sirve para mostrar <mark>algún estilo</mark> de etiqueta HTML.</p>
+                                    </div>
+                                    <div class="guide-content__properties">
+                                        <p><b>Código:</b></p>
+                                        <code>
+                                            &lt;p>Este es un párrafo de ejemplo que sirve para mostrar &lt;mark>algún estilo&lt;/mark> de etiqueta HTML.&lt;/p>
+                                        </code>
+                                    </div>
+                                </div>
+                            </card-component>
+                        </div>
+                        <div class="guide-content">
+                            <card-component>
+                                <div slot="inner-text" >
+                                    <div class="guide-content__example">
+                                        <p><b>Pequeño</b></p>
+                                        <hr>
+                                        <p><b>Ejemplo:</b></p>
+                                        <p>Este es un párrafo de ejemplo que sirve para mostrar <small>algún estilo</small> de etiqueta HTML.</p>
+                                    </div>
+                                    <div class="guide-content__properties">
+                                        <p><b>Código:</b></p>
+                                        <code>
+                                            &lt;p>Este es un párrafo de ejemplo que sirve para mostrar &lt;small>algún estilo&lt;/small> de etiqueta HTML.&lt;/p>
+                                        </code>
+                                    </div>
+                                </div>
+                            </card-component>
+                        </div>
+                        <div class="guide-content">
+                            <card-component>
+                                <div slot="inner-text" >
+                                    <div class="guide-content__example">
+                                        <p><b>Lista</b></p>
+                                        <hr>
+                                        <p><b>Ejemplo:</b></p>
+                                        <ul>
+                                            <li>Elemento 1</li>
+                                            <li>Elemento 2</li>
+                                            <li>Elemento 3</li>
+                                        </ul>
+                                    </div>
+                                    <div class="guide-content__properties">
+                                        <p><b>Código:</b></p>
+                                        <code>
+                                            &lt;ul><br>
+                                                &lt;li>Elemento 1</li><br>
+                                                &lt;li>Elemento 2</li><br>
+                                                &lt;li>Elemento 3</li><br>
+                                            &lt;/ul>
+                                        </code>
+                                    </div>
+                                </div>
+                            </card-component>
+                        </div>
+                        <div class="guide-content">
+                            <card-component>
+                                <div slot="inner-text" >
+                                    <div class="guide-content__example">
+                                        <p><b>Lista decorada</b></p>
+                                        <hr>
+                                        <p><b>Ejemplo:</b></p>
+                                        <ul class="decorated">
+                                            <li class="circular">Elemento 1</li>
+                                            <li>Elemento 2</li>
+                                            <li class="circular">Elemento 3</li>
+                                        </ul>
+                                    </div>
+                                    <div class="guide-content__properties">
+                                        <p><b>Código:</b></p>
+                                        <code>
+                                            &lt;ul class="decorated"><br>
+                                                &lt;li>Elemento 1</li><br>
+                                                &lt;li>Elemento 2</li><br>
+                                                &lt;li>Elemento 3</li><br>
+                                            &lt;/ul>
+                                        </code>
+                                    </div>
+                                </div>
+                            </card-component>
+                        </div>
+                    </div>
+                </section>
+                <section id="layout">
+                    <header>
+                        <h2>Layout</h2>
+                    </header>
+                    <div class="row">
+                        <div class="col-style col-2 col-sm-3 col-md-4 col-lg-6 col-xl-12">COLUMN</div>
+                        <div class="col-style col-2 col-sm-3 col-md-4 col-lg-6 col-xl-12">COLUMN</div>
+                        <div class="col-style col-2 col-sm-3 col-md-4 col-lg-6 col-xl-12">COLUMN</div>
+                        <div class="col-style col-2 col-sm-3 col-md-4 col-lg-6 col-xl-12">COLUMN</div>
+                        <div class="col-style col-2 col-sm-3 col-md-4 col-lg-6 col-xl-12">COLUMN</div>
+                        <div class="col-style col-2 col-sm-3 col-md-4 col-lg-6 col-xl-12">COLUMN</div>
+                        <div class="col-style col-2 col-sm-3 col-md-4 col-lg-6 col-xl-12">COLUMN</div>
+                        <div class="col-style col-2 col-sm-3 col-md-4 col-lg-6 col-xl-12">COLUMN</div>
+                        <div class="col-style col-2 col-sm-3 col-md-4 col-lg-6 col-xl-12">COLUMN</div>
+                        <div class="col-style col-2 col-sm-3 col-md-4 col-lg-6 col-xl-12">COLUMN</div>
+                        <div class="col-style col-2 col-sm-3 col-md-4 col-lg-6 col-xl-12">COLUMN</div>
+                        <div class="col-style col-2 col-sm-3 col-md-4 col-lg-6 col-xl-12">COLUMN</div>
+                    </div>
+                </section>
+            </article>
+        </main>
+    </div>
+    <footer>
+        <div class="sign">
+            <p>Creado por Miguel Ángel Muñoz Viejo</p>
+        </div>
+        <a href="#main-sidebar" alt="Ve a la parte de arriba de la página"><i id="go-top" class="fa-solid fa-arrow-up"> TOP</i></a>
+    </footer>
+    <script src="https://kit.fontawesome.com/3e29316f4d.js" crossorigin="anonymous"></script>
+    <script src="./web-components/card-component/card-component.js"></script>
+</body>
+</html>

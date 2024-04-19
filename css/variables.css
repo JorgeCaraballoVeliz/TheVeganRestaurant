@@ -1,0 +1,61 @@
+@font-face {
+  font-family: "VR_Standard";
+  src: url(../fonts/estandar.woff2) format("woff2");
+}
+@font-face {
+  font-family: "VR_Standard_Italic";
+  src: url(../fonts/estandar_italic.woff2) format("woff2");
+}
+@font-face {
+  font-family: "VR_Handmade";
+  src: url(../fonts/handmade.woff2);
+}
+html {
+  --min-width: 320px;
+  /* COLORS */
+  --primary-color: #c9ab81;
+  --primary-complement-color: #819fc9;
+  --primary-dark-color: #7c5e35;
+  --primary-darkest-color: #352817;
+  --primary-light-color: #f7f2ec;
+  --primary-lightest-color: white;
+  --secondary-color: #59335c;
+  --secondary-complement-color: #365c33;
+  --secondary-dark-color: black;
+  --secondary-darkest-color: black;
+  --secondary-light-color: #ae75b3;
+  --secondary-lightest-color: #d5b7d7;
+  --neutral-color: #333333;
+  --neutral-complement-color: #333333;
+  --neutral-dark-color: black;
+  --neutral-darkest-color: black;
+  --neutral-light-color: gray;
+  --neutral-lightest-color: #b3b3b3;
+  --warning-color: #cd0707;
+  --warning-complement-color: #07cdcd;
+  --warning-dark-color: #390202;
+  --warning-darkest-color: black;
+  --warning-light-color: #fa7373;
+  --warning-lightest-color: #fed5d5;
+  --info-color: #f0ad4e;
+  --info-complement-color: #4e91f0;
+  --info-dark-color: #985f0d;
+  --info-darkest-color: #3a2405;
+  --info-light-color: #fceedb;
+  --info-lightest-color: white;
+  --text-color: #ffffff;
+  --text-complement-color: white;
+  --text-dark-color: #b3b3b3;
+  --text-darkest-color: gray;
+  --text-light-color: white;
+  --text-lightest-color: white;
+  /* BREAKPOINTS */
+  --breakpoint-xs: 0;
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+  --breakpoint-xxl: 1400px;
+}
+
+/*# sourceMappingURL=variables.css.map */

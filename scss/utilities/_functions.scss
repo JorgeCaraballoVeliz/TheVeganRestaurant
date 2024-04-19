@@ -1,0 +1,30 @@
+@use 'variables' as *;
+@use 'sass:map';
+
+@function elements-paddings($property) {
+    @return map.get($elements-paddings, $property);
+}
+
+@function elements-colors($property) {
+    @return map.get($elements-colors, $property);
+}
+
+@function elements-sizes($property) {
+    @return map.get($elements-sizes, $property);
+}
+
+@function elements-weights($property) {
+    @return map.get($elements-weights, $property);
+}
+
+@function font-properties($property) {
+    @return map.get($font-properties, $property);
+}
+
+@function get-color($color) {
+    @return map.get($colors, $color);
+}
+
+@function get-breakpoint($breakpoint) {
+    @return map.get($breakpoints, $breakpoint);
+}

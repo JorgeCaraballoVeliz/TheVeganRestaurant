@@ -1,0 +1,11 @@
+@import 'utilities/variables';
+
+@each $color, $value in $colors {
+    .bg-#{$color}-color {
+        background-color: $value;
+    }
+
+    .font-#{$color}-color {
+        color: $value;
+    }
+}
